@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+  color: white;
+  height: 100%;
+  margin: 0;
+}
+
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-btn {
+  background-color: #d4af37;
+}
+
+
+.days {
+  height: 15vh;
+  width: 15vw;
+  border: 2px solid black;
+}
+
+.day {
+  width: 15vw;
+  height: 15vw;
+  border: 2px solid rgb(54, 59, 66);
+  vertical-align: top;
+
+}
+
+.delete-split {
+  height: 5%;
+  background-color: red;
+  color: white;
+}
+
+
+.workout-card {
+  border: 1px solid rgb(54, 59, 66);
+  margin-top: 1vh;
+  padding: 3%;
+  border-radius: 3%;
+}
+
+.workout-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5em;
+  border: 1px, solid rgb(54, 59, 66);
+  border-radius: 3%;
+}
+
+.workout-detail>b,
+.workout-detail>p,
+.workout-detail>i {
+  color: black
+}
+
+.workout-name {
+  background-color: rgb(54, 59, 66);
+  text-align: center;
+  color: white;
+}
+
+.ws-detail {
+  display: block;
+}
+
+.ws {
+  background-color: slategray;
+  height: 15vw;
+  border: 2px solid rgba(0, 0, 0, 0.925);
+  color: white;
+}
+
+
+
+td {
+  display: block;
+}
+
+/* tr {
+  display: block;
+} */

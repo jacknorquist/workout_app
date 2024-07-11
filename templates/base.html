@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movement</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5/dist/css/bootstrap.css">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script src="https://unpkg.com/jquery"></script>
+  <script src="https://unpkg.com/bootstrap"></script>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="shortcut icon" href="/static/favicon.ico">
+</head>
+
+<body class="{% block body_class %}{% endblock %}">
+
+  <nav class="navbar navbar-expand">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">
+        </a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+
+
+        {% if not g.user %}
+        <div class="signup">
+          <li><a href="/signup">Sign up</a></li>
+          <li><a href="/login">Log in</a></li>
+        </div>
+        {% else %}
+        <!-- <form action="/logout" method="POST">
+          <button type="submit">Log out</button>
+        </form> -->
+        {% endif %}
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    {% for category, message in get_flashed_messages(with_categories=True) %}
+    <div class="alert alert-{{ category }}">{{ message }}</div>
+    {% endfor %}
+
+    {% block content %}
+    {% endblock %}
+
+  </div>
+  <div class="sidebar">
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="static/index.js"></script>
+<script src="static/calendar.js"></script>
+<script src="static/exercise.js"></script>
+
+</html>

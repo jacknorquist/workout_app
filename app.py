@@ -12,6 +12,7 @@ from models import db, connect_db, User, Workout, Category, WorkoutSplit, UserWo
 
 load_dotenv()
 
+
 CURR_USER_KEY = "curr_user"
 
 app = Flask(__name__)

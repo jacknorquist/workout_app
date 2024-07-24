@@ -4,8 +4,8 @@
 <p>Steps to run locally</p>
 <ul>
 <li>Clone Repo Locally</li>
-<li>Create and Venv inside repo folder. Command: 'python3 -m venv venv'</li>
-<li>Activate Venv. Command: 'source venv/bin/activate'</li>
+<li>Create virtual environment inside repo folder. Command: 'python3 -m venv venv'</li>
+<li>Activate virtual environment. Command: 'source venv/bin/activate'</li>
 <li>Install requirements. Command: 'pip3 install -r requirements.txt'</li>
 <li>Run Application. Command: 'flask run'</li>
 </ul>
